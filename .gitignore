@@ -1,0 +1,29 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Ansible
+*.retry
+
+# Logs
+*.log
+logs/
+
+# Terraform state, if Terraform is added later
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

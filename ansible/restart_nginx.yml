@@ -1,0 +1,12 @@
+---
+- name: Recover failed NGINX service
+  hosts: local
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Restart the NGINX container
+      community.docker.docker_container:
+        name: self-healing-nginx
+        state: started
+        restart: true
